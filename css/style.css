@@ -137,7 +137,8 @@ header nav{
     display: flex;
     justify-content: center;
     padding: 10px;
-    background-color: whitesmoke;
+    background: rgb(146,145,173);
+    background: linear-gradient(90deg, rgba(146,145,173,1) 0%, rgba(202,202,227,1) 19%, rgba(255,255,255,1) 67%);
     border-top: solid black 3px;
 }
 
@@ -295,7 +296,7 @@ p{
 
 .mainNba h2{
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .mainNba video{
@@ -315,6 +316,22 @@ p{
     gap: 15px;
 }
 
+.nbaShoes{
+    animation-name: lunaGira;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes lunaGira{
+    from{
+        transform: scale(0.9);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}
+
 .nbaShoes img{
     margin: 10px;
     width: 30%;
@@ -326,7 +343,7 @@ p{
 
 .mainDunk h2{
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     margin: 10px;
 }
 
@@ -357,7 +374,7 @@ p{
 
 .mainAf h2{
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     margin: 10px;
 }
 
@@ -396,7 +413,7 @@ p{
 
 .mainContact h2{
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .mainContact p{
