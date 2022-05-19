@@ -409,16 +409,8 @@ p{
     border-radius: 10px;
 }
 
-/* MAIN CONTACT */
+/* CONTACT */
 
-.mainContact h2{
-    text-align: center;
-    font-size: 30px;
-}
-
-.mainContact p{
-    margin-top: 10px;
-}
 
 footer{
     grid-area: footer;
