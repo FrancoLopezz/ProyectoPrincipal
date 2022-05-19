@@ -247,11 +247,9 @@ p{
     height: 100%; 
 }
 
-
 .histIframe{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -270,7 +268,7 @@ p{
 .asideFounders h3{
     text-decoration: underline;
     font-size: 12px;
-    margin: 0px 0px 5px 0px;
+    margin-bottom: 5px;
 }
 
 .asideFounders div{
