@@ -269,6 +269,7 @@ p{
     text-decoration: underline;
     font-size: 12px;
     margin-bottom: 5px;
+    margin: 10px;
 }
 
 .asideFounders div{
@@ -281,7 +282,7 @@ p{
     width: 100%;
     border: double black;
     border-radius: 4px;
-    margin: 5px;
+    margin: 0px;
     padding: 2px;
 }
 
@@ -354,7 +355,9 @@ p{
     margin-left: 5px;
 }
 
-.dunkShoes{
+
+
+/* .dunkShoes{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -366,7 +369,7 @@ p{
     width: 30%;
     border: double black;
     border-radius: 10px;
-}
+} */
 
 /* Main AIR FORCE */
 
@@ -409,13 +412,10 @@ p{
 
 /* MAIN CONTACT */
 
-.mainContact h2{
-    text-align: center;
-    font-size: 30px;
-}
-
-.mainContact p{
-    margin-top: 10px;
+.container-fluid p{
+    font-size: 16px;
+    margin: 0px;
+    padding: 1px;
 }
 
 footer{
