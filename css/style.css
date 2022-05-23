@@ -133,30 +133,6 @@ header div img{
     width: 10%;
 }
 
-/* header nav{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background: rgb(146,145,173);
-    background: linear-gradient(90deg, rgba(146,145,173,1) 0%, rgba(202,202,227,1) 19%, rgba(255,255,255,1) 67%);
-    border-top: solid black 3px;
-}
-
-ul{
-    display: flex;
-    list-style: none;
-    gap: 10px;
-}
-
-header li a:hover{
-    font-size: 30px;
-}
-
-.menu li a{
-    text-decoration: none;
-    color: black;
-} */
-
 header video{
     width: 100%;
 }
@@ -354,20 +330,6 @@ p{
     margin-top: 10px;
     margin-left: 5px;
 }
-
-/* .dunkShoes{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 15px;
-}
-
-.dunkShoes img{
-    margin: 10px;
-    width: 30%;
-    border: double black;
-    border-radius: 10px;
-} */
 
 /* Main AIR FORCE */
 
