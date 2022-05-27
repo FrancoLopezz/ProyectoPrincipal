@@ -1,3 +1,5 @@
+@import "utilities/variables";
+
 *{
     padding: 0;
     margin: 0;
@@ -55,7 +57,7 @@ header{
     }
 
     video{
-        width: 100%;
+        width: $medida-width;
     }
 }
 
@@ -72,11 +74,11 @@ main{
     }
 
     .nikeCreator{
-        width: 50%;
+        width: $medida-width - 50%;
     }
     
     .nikeTimeline{
-        width: 50%;
+        width: $medida-width - 50%;
     }
     p{
         font-size: 20px;
@@ -87,18 +89,18 @@ main{
 
 footer{
     grid-area: footer;
-    background-color: black;
+    background-color: $footer-background;
     padding: 5px;
     border-top: double white 5px;
 
     h2{
-        color: whitesmoke;
+        color: $footer-text;
         display: flex;
         justify-content: end;
         gap: 10px;
         a{
             text-decoration: none;
-            color: whitesmoke;
+            color: $footer-text;
         }
     }
 }
