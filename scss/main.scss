@@ -1,0 +1,349 @@
+@import "utilities/variables";
+@import "utilities/mixins"; 
+
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    display: grid;
+    height: $medida-heigh;
+    grid-template-areas: "header header header" 
+                         "main main main"
+                         "main main main"
+                         "footer footer footer";
+    gap: 10px;
+}
+
+/* Contenedor history.html */
+.contenedorHistory{
+    display: grid;
+    height: $medida-heigh;
+    grid-template-areas: "header header header" 
+                         "aside main main"
+                         "footer footer footer";
+    gap: 10px;
+}
+
+/* mq mobile */
+
+@media screen and (min-width: 480px){
+
+    .contenedor{
+        grid-template-areas: "header" 
+                             "main"
+                             "main"
+                             "footer";
+    }
+
+    .contenedorHistory{
+        grid-template-areas: "header header" 
+                             "main main"
+                             "aside aside"  
+                             "footer footer";
+    }  
+}
+
+/* mq tablet */
+
+@media screen and (min-width: 800px){
+
+    .contenedor{
+        grid-template-areas: "header header" 
+                             "main main"
+                             "main main"
+                             "footer footer";
+    }
+
+    .contenedorHistory{
+        grid-template-areas: "header header header" 
+                             "aside main main"
+                             "aside main main"
+                             "footer footer footer";
+    }
+}
+
+/* mq desktop */
+
+@media screen and (min-width: 1024px) {
+
+    .contenedorHistory{
+        grid-template-areas: "header header header header" 
+                             "aside main main main"
+                             "main main main main"
+                             "footer footer footer footer";
+    }
+
+    .contenedorHistory{
+        display: grid;
+        height: $medida-heigh;
+        grid-template-areas: "header header header" 
+                             "aside main main"
+                             "footer footer footer";
+        gap: 10px;
+    }
+}
+
+header{
+    
+    grid-area: header;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: $medida-width;
+        }
+
+        h1{
+            font-size: $font-tittle;
+            font-style: italic;
+        }
+    }
+
+    video{
+        width: $medida-width;
+    }
+}
+
+main{
+    grid-area: main;
+    padding-top: $padding-size + 10px;
+    
+    .mainIndex{
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;            
+    }
+
+    .nikeCreator{
+        width: $medida-width - 50%;
+    }
+    
+    .nikeTimeline{
+        width: $medida-width - 50%;
+    }
+
+    .presentation-nike{
+        p{
+            font-size: $font-text + 4px;
+            margin: $margin-size;
+            padding: $padding-size;
+            text-align: center;
+            a{
+                color: $color-principal;
+                text-decoration: none;
+            }
+        }
+        
+
+    }
+}
+
+/* MAIN HISTORY */
+
+.mainHistory{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+
+    h2{
+        text-align: center; 
+        font-size: $font-subtittle;
+        margin: $margin-size - 5px;        
+    }
+
+    div{
+        p{
+            font-size: $font-text;
+            margin-right: $margin-size + 50px;
+            margin-left: $margin-size + 50px;
+            padding: $padding-size;
+            text-align: center;
+        }
+    }
+
+    .mainImgp{
+        display: flex;
+        justify-content: center;
+
+        .mainImg{
+            margin-top: 20px;
+            margin-right: 10px;
+            border: solid $color-terciario 2px;
+        }
+    }
+
+    .asideFounders{
+        grid-area: aside;
+        margin-top: 50px;
+
+        h3{
+            text-decoration: underline;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+/* MAIN NBA */
+
+.mainNba{
+    display: flex;
+    flex-direction: column;
+
+    h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    video{
+        width: 100%;
+    }
+    
+    p{
+        @include textShoes (20px, 30px)
+    }
+
+    .nbaShoes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        animation-name: lunaGira;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+
+        @keyframes lunaGira{
+            from{
+                transform: scale(0.9);
+            }
+        
+            to{
+                transform: scale(1);
+            }
+        }
+
+        img{
+            margin: 10px;
+            width: $medida-width - 70%;
+            border: double $color-principal;
+            border-radius: 10px;
+        }
+    }
+}
+
+/* Main DUNK */
+
+.mainDunk {
+    h2{
+        text-align: center;
+        font-size: $font-subtittle;
+        margin: $margin-size;
+    }
+
+    video{
+        width: $medida-width;        
+    }
+
+    p{
+        @include textShoes (20px, 30px)
+    }
+
+    .carousel{
+        width: $medida-width - 30%;
+    }
+}
+
+/* Main AIR FORCE */
+
+.mainAf{
+    h2{
+        text-align: center;
+        font-size: $font-subtittle;
+        margin: 10px;
+    }
+    video{
+        width: $medida-width;
+    }
+    p{
+        @include textShoes (20px, 30px)       
+    }
+    img{
+        margin: 10px;
+        width: 10%;
+        border: double $color-principal;
+        border-radius: 10px;        
+    }
+    .afShoes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 15px;
+
+        img{
+            margin: 10px;
+            width: 30%;
+            border: double $color-principal;
+            border-radius: 10px;            
+        }        
+    }
+}
+
+/* MAIN CONTACT */
+
+.container-fluid{
+    p{
+        font-size: 16px;
+        margin: 0px;
+        padding: 1px;
+    }
+}
+
+footer{
+    grid-area: footer;
+    background-color: $color-principal;
+    padding: 20px;
+    border-top: double $color-secundario 5px;
+    display: flex;
+    justify-content: space-between;
+
+    h2{
+        color: $footer-text;
+        gap: 10px;
+    }
+
+    h3{
+        color: $footer-text;
+        gap: 10px;
+    }
+
+    div{
+        width: 2%;
+        a:hover{
+            filter:saturate(2)
+        }
+        a{
+            text-decoration: none;
+            img{
+                width: 100%;
+                padding: 5px;
+            }
+            img:hover{
+                transform: translateY(-2px) scale(1.5);
+                filter: none;
+            }
+        }
+    }
+
+}
