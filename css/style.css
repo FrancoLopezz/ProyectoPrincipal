@@ -29,17 +29,12 @@
   .contenedor {
     grid-template-areas: "header header"  "main main" "main main" "footer footer"; }
   .contenedorHistory {
-    grid-template-areas: "header header header"  "aside main main" "aside main main" "footer footer footer"; } }
+    grid-template-areas: "header header header"  "main main main" "aside aside aside" "footer footer footer"; } }
 
 /* mq desktop */
 @media screen and (min-width: 1024px) {
   .contenedorHistory {
-    grid-template-areas: "header header header header"  "aside main main main" "main main main main" "footer footer footer footer"; }
-  .contenedorHistory {
-    display: grid;
-    height: 70vh;
-    grid-template-areas: "header header header"  "aside main main" "footer footer footer";
-    gap: 10px; } }
+    grid-template-areas: "header header header header"  "aside main main main" "aside main main main" "footer footer footer footer"; } }
 
 header {
   grid-area: header; }
@@ -49,7 +44,7 @@ header {
     justify-content: center;
     align-items: center; }
     header div img {
-      width: 100%; }
+      width: 200px; }
     header div h1 {
       font-size: 50px;
       font-style: italic; }
@@ -200,9 +195,6 @@ footer {
   border-top: double whitesmoke 5px;
   display: flex;
   justify-content: space-between; }
-  footer h2 {
-    color: whitesmoke;
-    gap: 10px; }
   footer h3 {
     color: whitesmoke;
     gap: 10px; }

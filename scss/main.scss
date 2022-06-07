@@ -61,8 +61,8 @@
 
     .contenedorHistory{
         grid-template-areas: "header header header" 
-                             "aside main main"
-                             "aside main main"
+                             "main main main"
+                             "aside aside aside"
                              "footer footer footer";
     }
 }
@@ -74,17 +74,8 @@
     .contenedorHistory{
         grid-template-areas: "header header header header" 
                              "aside main main main"
-                             "main main main main"
+                             "aside main main main"
                              "footer footer footer footer";
-    }
-
-    .contenedorHistory{
-        display: grid;
-        height: $medida-heigh;
-        grid-template-areas: "header header header" 
-                             "aside main main"
-                             "footer footer footer";
-        gap: 10px;
     }
 }
 
@@ -99,7 +90,7 @@ header{
         align-items: center;
 
         img{
-            width: $medida-width;
+            width: 200px;
         }
 
         h1{
@@ -317,11 +308,6 @@ footer{
     border-top: double $color-secundario 5px;
     display: flex;
     justify-content: space-between;
-
-    h2{
-        color: $footer-text;
-        gap: 10px;
-    }
 
     h3{
         color: $footer-text;
