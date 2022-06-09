@@ -1,4 +1,7 @@
-@mixin textShoes ($font-size, $margin){
+@mixin textShoes ($font-size, $text-align, $margin-top, $margin-left, $margin-right,){
     font-size: $font-size;
-    margin: $margin;
+    text-align: $text-align;
+    margin-top: $margin-top;
+    margin-left: $margin-left;
+    margin-right: $margin-right;
 }

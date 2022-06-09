@@ -95,18 +95,31 @@
 
         <aside class="asideFounders">
 
-          <div>  
-              <button class="btn btn-primary bg-secondary border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-              <h2>Fundadores: "Phil Knight"</h2>
-              </button>
-          </div>
-          <div style="min-height: 120px;">
-            <div class="collapse collapse-horizontal" id="collapseWidthExample">
-              <div class="card card-body" style="width: 300px;">
-                <img src="../img/Phil-Knight.png" alt="Phil Knight">
+            <p>
+              <a class="btn btn-primary bg-secondary border-dark" style="gap: 10px;" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Phil Knight</a>
+              <button class="btn btn-primary bg-secondary border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Bill Bowerman</button>
+              <button class="btn btn-primary bg-secondary border-dark" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Ambos</button>
+            </p>
+            <div class="row">
+              <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                  <div class="card card-body" style="width: 350px;">
+                    <img src="../img/Phil-Knight.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                  <div class="card card-body" style="width: 350px;">
+                    <img src="../img/billbowerman.png" alt="">
+                  </div>
+                </div>
               </div>
             </div>
+
         </aside>
+
+        
 
         <footer>
           <h3>
