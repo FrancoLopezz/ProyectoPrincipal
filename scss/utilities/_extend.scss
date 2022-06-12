@@ -1,5 +1,12 @@
 %border-img{
     border: 1px solid black;
     box-shadow: 5px 5px 10px;
-    border-radius: 4px;
+    border-radius: 2px;
+}
+
+%item-fixed{
+    position: fixed;
+    height: 5vh;
+    bottom: 3rem;
+    right: 3rem;
 }
