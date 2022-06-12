@@ -30,7 +30,7 @@ main .item-fixed, .mainHistory .item-fixed, .mainNba .item-fixed, .mainDunk .ite
   gap: 10px; }
 
 /* mq mobile */
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 300px) {
   .contenedor {
     grid-template-areas: "header"  "main" "main" "footer"; }
   .contenedorHistory {
