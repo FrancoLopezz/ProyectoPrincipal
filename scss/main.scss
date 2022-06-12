@@ -33,7 +33,7 @@
 
 /* mq mobile */
 
-@media screen and (min-width: 300px){
+@media screen and (min-width: 340px){
 
     .contenedor{
         grid-template-areas: "header" 
@@ -316,23 +316,23 @@ main{
     }
 
     p{
-        @include textShoes (20px, justify, 30px, 100px, 100px)       
+        @include textShoes (20px, center, 30px, 100px, 100px)       
     }
 
     .containerAf{
         display: flex;
         flex-wrap: wrap;
         justify-content:space-around;
-        align-items: center;
         gap: 20px;
-        padding: 0.5rem;
+        margin: $margin-size;
 
         .afShoes{
             @extend %border-img;
-            width: 30rem;
+            width: 25rem;
 
             img{
                 width: 100%;
+                height: 100%;
                 border: 2px ridge $color-principal;
                 filter: grayscale(1);
             }     

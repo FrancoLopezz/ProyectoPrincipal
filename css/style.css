@@ -6,8 +6,8 @@ main .mainIndex .nikeCreator, .mainHistory .mainImgp .mainImg, .mainNba .nbaShoe
 main .item-fixed, .mainHistory .item-fixed, .mainNba .item-fixed, .mainDunk .item-fixed, .mainAf .item-fixed {
   position: fixed;
   height: 5vh;
-  bottom: 3rem;
-  right: 3rem; }
+  bottom: 2rem;
+  right: 2rem; }
 
 /* reset */
 * {
@@ -30,7 +30,7 @@ main .item-fixed, .mainHistory .item-fixed, .mainNba .item-fixed, .mainDunk .ite
   gap: 10px; }
 
 /* mq mobile */
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 340px) {
   .contenedor {
     grid-template-areas: "header"  "main" "main" "footer"; }
   .contenedorHistory {
@@ -201,7 +201,7 @@ main {
 
 .mainAf p {
   font-size: 20px;
-  text-align: justify;
+  text-align: center;
   margin-top: 30px;
   margin-left: 100px;
   margin-right: 100px; }
@@ -210,13 +210,13 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
   gap: 20px;
-  padding: 0.5rem; }
+  margin: 10px; }
   .mainAf .containerAf .afShoes {
-    width: 30rem; }
+    width: 25rem; }
     .mainAf .containerAf .afShoes img {
       width: 100%;
+      height: 100%;
       border: 2px ridge black;
       filter: grayscale(1); }
     .mainAf .containerAf .afShoes img:hover {
