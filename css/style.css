@@ -30,7 +30,7 @@ main .item-fixed, .mainHistory .item-fixed, .mainNba .item-fixed, .mainDunk .ite
   gap: 10px; }
 
 /* mq mobile */
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 400px) {
   .contenedor {
     grid-template-areas: "header"  "main" "main" "footer"; }
   .contenedorHistory {
@@ -122,15 +122,16 @@ main {
   .mainHistory .mainImgp {
     display: flex;
     justify-content: center;
-    width: 100%;
-    margin: 10px; }
+    width: 100%; }
     .mainHistory .mainImgp .mainImg {
       margin: 20px;
       transition: 0.5s; }
       .mainHistory .mainImgp .mainImg img {
         width: 100%; }
     .mainHistory .mainImgp .mainImg:hover {
-      transform: scale(1.1); }
+      transform: scaleY(1.1); }
+  .mainHistory .item-fixed {
+    z-index: 1; }
 
 .asideFounders {
   grid-area: aside;

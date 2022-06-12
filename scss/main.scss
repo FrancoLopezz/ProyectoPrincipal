@@ -33,7 +33,7 @@
 
 /* mq mobile */
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 400px){
 
     .contenedor{
         grid-template-areas: "header" 
@@ -198,7 +198,6 @@ main{
         display: flex;
         justify-content: center;
         width: $medida-width;
-        margin: $margin-size;
 
         .mainImg{
             margin: 20px;
@@ -210,12 +209,13 @@ main{
         }
         
         .mainImg:hover{
-            transform: scale(1.1);
+            transform: scaleY(1.1)
         }
     }
 
     .item-fixed{
         @extend %item-fixed;
+        z-index: 1;
     }    
 }
 
