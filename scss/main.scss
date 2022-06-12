@@ -110,7 +110,7 @@ header{
 
         h1{
             font-size: $font-tittle;
-            font-style: italic;
+            font-style: italic; 
         }
     }
 
@@ -123,7 +123,7 @@ main{
     grid-area: main;
     padding-top: $padding-size + 10px;
     
-    .mainIndex{
+    .mainIndex{ 
         grid-area: main;
         display: flex;
         flex-direction: column;
@@ -363,23 +363,26 @@ main{
 
 footer{
     grid-area: footer;
-    background-color: $color-principal;
+    background-color: whitesmoke;
+    margin-top: 10px;
     padding: 20px;
-    border-top: double $color-secundario 5px;
+    border-top: double $color-principal 3px;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-self: flex-end;
 
     h3{
-        color: $footer-text;
+        font-size: $font-text;
+        color: $footer-text2;
         gap: 10px;
     }
 
     .footerCss{
         width: 2%;
+        display: flex;
         a:hover{
-            filter:saturate(2)
+            filter: invert(0.4) sepia(1);
         }
         a{
             text-decoration: none;
