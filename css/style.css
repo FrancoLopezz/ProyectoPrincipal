@@ -30,7 +30,7 @@ main .item-fixed, .mainHistory .item-fixed, .mainNba .item-fixed, .mainDunk .ite
   gap: 10px; }
 
 /* mq mobile */
-@media screen and (min-width: 340px) {
+@media screen and (min-width: 350px) {
   .contenedor {
     grid-template-areas: "header"  "main" "main" "footer"; }
   .contenedorHistory {
@@ -114,7 +114,7 @@ main {
     font-size: 30px;
     margin: 5px; }
   .mainHistory div p {
-    font-size: 16px;
+    font-size: 20px;
     margin-right: 60px;
     margin-left: 60px;
     padding: 10px;
@@ -182,7 +182,7 @@ main {
 
 .mainDunk .textDunk {
   font-size: 20px;
-  text-align: justify;
+  text-align: center;
   margin-top: 30px;
   margin-left: 100px;
   margin-right: 100px; }

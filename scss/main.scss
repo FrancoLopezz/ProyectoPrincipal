@@ -33,7 +33,7 @@
 
 /* mq mobile */
 
-@media screen and (min-width: 340px){
+@media screen and (min-width: 350px){
 
     .contenedor{
         grid-template-areas: "header" 
@@ -186,7 +186,7 @@ main{
 
     div{
         p{
-            font-size: $font-text;
+            font-size: $font-text + 4px;
             margin-right: $margin-size + 50px;
             margin-left: $margin-size + 50px;
             padding: $padding-size;
@@ -289,7 +289,7 @@ main{
     }
 
     .textDunk{
-        @include textShoes (20px, justify, 30px, 100px, 100px)
+        @include textShoes (20px, center, 30px, 100px, 100px)
     }
 
     .carousel{
