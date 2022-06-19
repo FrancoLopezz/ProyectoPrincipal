@@ -66,10 +66,12 @@ header {
     header div img {
       width: 150px; }
     header div h1 {
-      font-size: 50px;
+      font-size: 70px;
       font-style: italic; }
   header video {
     width: 100%; }
+  header .nav-link {
+    font-size: 14px; }
 
 main {
   grid-area: main;
@@ -90,7 +92,7 @@ main {
       border-bottom: solid 0.5px;
       box-shadow: 2px 7px 10px; }
   main .presentation-nike p {
-    font-size: 20px;
+    font-size: 24px;
     margin: 10px;
     padding: 10px;
     text-align: center; }
@@ -111,7 +113,7 @@ main {
   flex-direction: column; }
   .mainHistory h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     margin: 5px; }
   .mainHistory div p {
     font-size: 20px;
@@ -143,11 +145,11 @@ main {
   flex-direction: column; }
   .mainNba h2 {
     text-align: center;
-    font-size: 30px; }
+    font-size: 40px; }
   .mainNba video {
     width: 100%; }
   .mainNba p {
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     margin-top: 30px;
     margin-left: 100px;
@@ -174,14 +176,14 @@ main {
 /* Main DUNK */
 .mainDunk h2 {
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
   margin: 10px; }
 
 .mainDunk video {
   width: 100%; }
 
 .mainDunk .textDunk {
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   margin-top: 30px;
   margin-left: 100px;
@@ -193,14 +195,14 @@ main {
 /* Main AIR FORCE */
 .mainAf h2 {
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
   margin: 10px; }
 
 .mainAf video {
   width: 100%; }
 
 .mainAf p {
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   margin-top: 30px;
   margin-left: 100px;
@@ -225,7 +227,7 @@ main {
 
 /* MAIN CONTACT */
 .container-fluid p {
-  font-size: 16px;
+  font-size: 24px;
   margin: 0px;
   padding: 1px; }
 
@@ -240,7 +242,7 @@ footer {
   align-items: center;
   align-self: flex-end; }
   footer h3 {
-    font-size: 16px;
+    font-size: 20px;
     color: black;
     gap: 10px; }
   footer .footerCss {
